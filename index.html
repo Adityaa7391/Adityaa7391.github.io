@@ -367,7 +367,8 @@ problem-solving.
                 <span>📧</span>
                 <p>adityarajputdbapatna@email.com</p>
             </div>
- <div class="info-box">
+
+            <div class="info-box">
                 <span>📧</span>
                 <p>adityarajputlnmi@email.com</p>
             </div>
@@ -376,18 +377,42 @@ problem-solving.
                 <span>📞</span>
                 <p>+91 9525891894</p>
             </div>
+
             <div class="info-box">
                 <span>📍</span>
-                <p>Patna,India</p>
+                <p>Patna, India</p>
             </div>
         </div>
 
         <!-- RIGHT FORM -->
-        <form class="contact-form" onsubmit="return validateForm()">
-            <input type="text" id="name" placeholder="Your Name">
-            <input type="email" id="email" placeholder="Your Email">
-            <textarea id="message" placeholder="Your Message"></textarea>
-            <button class="btn">Send Message</button>
+        <form
+            class="contact-form"
+            action="https://formspree.io/f/xayzabcd"
+            method="POST"
+        >
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button class="btn" type="submit">
+                Send Message
+            </button>
         </form>
 
     </div>
