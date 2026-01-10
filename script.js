@@ -4,7 +4,7 @@
 const navLinks = document.querySelectorAll("nav ul li a");
 
 // Keep clicked menu item active
-navLinks.forEach(link => {
+navLinks.forEach(link => { 
     link.addEventListener("click", () => {
         navLinks.forEach(l => l.classList.remove("active"));
         link.classList.add("active");
