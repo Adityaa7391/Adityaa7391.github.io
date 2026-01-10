@@ -38,34 +38,18 @@ setInterval(updateDateTime, 1000);
 updateDateTime();
 
 /******************************
- * CONTACT FORM VALIDATION
+ * CONTACT FORM (FORMSPREE REPLY-TO)
  ******************************/
-function validateForm() {
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector(".contact-form");
+    if (!form) return;
 
-    if (name === "") {
-        alert("Please enter your name.");
-        return false;
-    }
+    form.addEventListener("submit", () => {
+        const emailInput = form.querySelector('input[name="email"]');
+        const replyTo = form.querySelector('input[name="_replyto"]');
 
-    if (email === "") {
-        alert("Please enter your email.");
-        return false;
-    }
-
-    if (message === "") {
-        alert("Please enter your message.");
-        return false;
-    }
-
-    alert("Message sent successfully!");
-    return true;
-}
-const form = document.querySelector(".contact-form");
-form.addEventListener("submit", () => {
-    const email = form.querySelector('input[name="email"]').value;
-    form.querySelector('input[name="_replyto"]').value = email;
+        if (emailInput && replyTo) {
+            replyTo.value = emailInput.value;
+        }
+    });
 });
-
