@@ -63,11 +63,9 @@ function validateForm() {
     alert("Message sent successfully!");
     return true;
 }
-<script>
 const form = document.querySelector(".contact-form");
 form.addEventListener("submit", () => {
     const email = form.querySelector('input[name="email"]').value;
     form.querySelector('input[name="_replyto"]').value = email;
 });
-</script>
 
