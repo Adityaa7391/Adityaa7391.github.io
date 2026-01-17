@@ -535,3 +535,87 @@ nav ul li a.active{
 nav ul li a.active::after{
     width: 100%;
 }
+.skill-interactive{
+max-width:800px;
+margin:40px auto 0
+}
+
+.skill-buttons{
+display:flex;
+justify-content:center;
+gap:12px;
+flex-wrap:wrap;
+margin-bottom:25px
+}
+
+.skill-btn{
+padding:10px 22px;
+border-radius:30px;
+border:2px solid #00bfff;
+background:transparent;
+color:#00bfff;
+cursor:pointer;
+transition:.3s
+}
+
+.skill-btn.active,
+.skill-btn:hover{
+background:#00bfff;
+color:#000;
+box-shadow:0 0 15px rgba(0,191,255,.6)
+}
+
+.skill-details{
+background:rgba(255,255,255,.08);
+padding:25px;
+border-radius:18px
+}
+
+.skill-panel{
+display:none;
+animation:fade .4s ease
+}
+
+.skill-panel.active{
+display:block
+}
+
+.row{
+display:grid;
+grid-template-columns:160px 1fr;
+align-items:center;
+gap:15px;
+margin-bottom:14px
+}
+
+.bar{
+height:14px;
+background:rgba(255,255,255,.25);
+border-radius:20px;
+overflow:hidden
+}
+
+.bar div{
+height:100%;
+width:0;
+background:linear-gradient(90deg,#00bfff,#00ffe7);
+border-radius:20px;
+animation:grow 1.2s forwards
+}
+
+.bar div{width:var(--w)}
+
+@keyframes grow{
+from{width:0}
+to{width:var(--w)}
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(10px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+@media(max-width:600px){
+.row{grid-template-columns:120px 1fr}
+}
+
