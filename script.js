@@ -52,4 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
             replyTo.value = emailInput.value;
         }
     });
+
+});
+document.querySelectorAll(".skill-btn").forEach(btn=>{
+btn.addEventListener("click",()=>{
+document.querySelectorAll(".skill-btn").forEach(b=>b.classList.remove("active"));
+document.querySelectorAll(".skill-panel").forEach(p=>p.classList.remove("active"));
+btn.classList.add("active");
+document.getElementById(btn.dataset.skill).classList.add("active");
+});
 });
