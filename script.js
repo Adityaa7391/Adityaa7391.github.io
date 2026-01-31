@@ -136,5 +136,26 @@ elements.forEach((el) => {
 
     typeLoop();
 });
+/******************************
+ * HAMBURGER MENU (SAFE)
+ ******************************/
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-links");
+
+    if (!hamburger || !navMenu) return;
+
+    hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+
+    // Close menu on link click (mobile only)
+    navMenu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            navMenu.classList.remove("active");
+        });
+    });
+});
+
 
 
