@@ -785,6 +785,23 @@ to{opacity:1;transform:translateY(0)}
     }
 }
 
+/* =========================
+   HAMBURGER RIGHT CORNER FIX
+========================= */
+@media (max-width:768px){
+
+    nav{
+        padding-right:20px; /* override heavy padding */
+    }
+
+    .hamburger{
+        position:absolute;
+        right:20px;          /* 🔥 force to right corner */
+        top:50%;
+        transform:translateY(-50%);
+    }
+}
+
 
 
 
