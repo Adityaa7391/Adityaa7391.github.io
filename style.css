@@ -751,6 +751,37 @@ to{opacity:1;transform:translateY(0)}
         display:flex;
     }
 }
+/* =========================
+   HERO SPACING FIX (MOBILE)
+========================= */
+@media (max-width:768px){
+
+    .hero{
+        padding-top:130px;   /* navbar + breathing space */
+        gap:30px;            /* 🔥 main spacing fix */
+    }
+
+    /* Tech panel spacing */
+    .tech-panel{
+        margin-bottom:35px;  /* space before resume buttons */
+    }
+
+    /* Resume buttons spacing */
+    .resume-buttons{
+        margin-top:20px;
+        margin-bottom:40px;  /* 🔥 space before floating image */
+        display:flex;
+        flex-direction:column;
+        gap:14px;
+        align-items:center;
+    }
+
+    /* Hero image spacing only (NO animation removed) */
+    .hero-img{
+        margin-top:25px;
+    }
+}
+
 
 
 
