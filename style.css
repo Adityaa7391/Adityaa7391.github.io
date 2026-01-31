@@ -193,12 +193,15 @@ nav ul li a {
 
 
 .about-img{
-    width:200px;
-    height:200px;
-    border-radius:50%;
+    width:220px;
+    height:220px;
     object-fit:cover;
+    object-position: center top; /* 🔥 KEY FIX */
+    border-radius:12px;
     border:4px solid #00e5ff;
+    box-shadow:0 0 25px rgba(0,229,255,0.5);
 }
+
 /* ABOUT SECTION IMAGE */
 .about-container{
     display: flex;
@@ -781,6 +784,7 @@ to{opacity:1;transform:translateY(0)}
         margin-top:25px;
     }
 }
+
 
 
 
