@@ -801,6 +801,16 @@ to{opacity:1;transform:translateY(0)}
         transform:translateY(-50%);
     }
 }
+/* =========================
+   MOBILE LOGO LEFT CORNER FIX
+========================= */
+@media (max-width:768px){
+    nav{
+        padding-left:15px;   /* logo closer to left edge */
+        padding-right:15px;  /* balance with hamburger */
+    }
+}
+
 
 
 
