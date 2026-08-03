@@ -2,551 +2,802 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Aditya | Full Stack Developer</title>
+    <title>Aditya Raj | Full Stack Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="noise"></div>
+
+<header id="header">
     <nav>
-        <h1 class="logo">Aditya.dev</h1>
+        <a href="#home" class="logo"><span class="logo-bracket">[</span>AR<span class="logo-bracket">]</span></a>
         <ul id="nav-links">
-    <li><a href="#home" class="active">Home</a></li>
-    <li><a href="#about">About</a></li>
-<li><a href="#academics">Academics</a></li>
-    <li><a href="#skills">Skills</a></li>
-<li><a href="#coding">Coding Profiles</a></li>
-
-    <li><a href="#projects">Projects</a></li>
-<li><a href="#achievements">Achievements</a></li>
-    <li><a href="#certifications">Certifications</a></li>
-    <li><a href="#social">Social</a></li>
-    <li><a href="#contact">Contact</a></li>
-
-</ul>
-	<div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
-	
+            <li><a href="#home" class="nav-link active"><span class="nav-num">01</span>Home</a></li>
+            <li><a href="#about" class="nav-link"><span class="nav-num">02</span>About</a></li>
+            <li><a href="#academics" class="nav-link"><span class="nav-num">03</span>Academics</a></li>
+            <li><a href="#skills" class="nav-link"><span class="nav-num">04</span>Skills</a></li>
+            <li><a href="#coding" class="nav-link"><span class="nav-num">05</span>Coding</a></li>
+            <li><a href="#projects" class="nav-link"><span class="nav-num">06</span>Projects</a></li>
+            <li><a href="#achievements" class="nav-link"><span class="nav-num">07</span>Achievements</a></li>
+            <li><a href="#certifications" class="nav-link"><span class="nav-num">08</span>Certs</a></li>
+            <li><a href="#contact" class="nav-link"><span class="nav-num">09</span>Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
 </header>
 
 <!-- HERO -->
 <section id="home" class="hero">
-    <div class="hero-text">
-       <h2 id="typingText"></h2>
-  <h2 class="glitch" data-text="Aditya Raj">Aditya Raj</h2>
-
-<div class="tech-panel">
-    <img src="image1.jpg" alt="Tech Background">
-</div>
-
-        <p>MCA Student • Full Stack Developer • Problem Solver</p>
-
-        <div class="resume-buttons">
-    <a href="Aditya_Raj_Resume.pdf" target="_blank" class="btn outline-btn">View Resume</a>
-    <a href="Aditya_Raj_Resume.pdf.pdf" download target="_blank" class="btn outline-btn" >Download Resume</a>
-</div>
+    <div class="hero-bg-grid"></div>
+    <div class="hero-left">
+        <div class="hero-tag"><span class="dot-pulse"></span> Available for opportunities</div>
+        <p class="hero-greeting" id="typingText"></p>
+        <h1 class="hero-name">Aditya<br><span class="name-accent">Raj</span></h1>
+        <p class="hero-role">MCA Student &nbsp;·&nbsp; Full Stack Developer &nbsp;·&nbsp; MERN Stack &nbsp;·&nbsp; React Native</p>
+        <div class="hero-btns">
+            <a href="Aditya_Cdac_Resume.pdf" target="_blank" class="btn btn-primary">View Resume ↗</a>
+            <a href="Aditya_Cdac_Resume.pdf" download class="btn btn-outline">Download CV ↓</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat"><span class="stat-num">8.71</span><span class="stat-label">BCA CGPA</span></div>
+            <div class="stat-div"></div>
+            <div class="stat"><span class="stat-num">8.29</span><span class="stat-label">MCA CGPA</span></div>
+            <div class="stat-div"></div>
+            <div class="stat"><span class="stat-num">9+</span><span class="stat-label">Projects</span></div>
+            <div class="stat-div"></div>
+            <div class="stat"><span class="stat-num">MERN</span><span class="stat-label">Stack</span></div>
+        </div>
     </div>
-
-    <div class="hero-img">
-       <img id="heroImage" src="https://imgs.search.brave.com/bTVz_TW4aCw5p7luxvqW9jQTqTa3uMvnKQvtAedWel0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNDk1/OTE5NTI3L3ZlY3Rv/ci9pbnRlcm5ldC5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/WjhFcHB4aG4zd0Vs/X2RUVnhkN256TDc4/SEY2ZW91OEgxZGw5/TzhDZjZ5az0" alt="coding">
-
+    <div class="hero-right">
+        <div class="hcc-code-card">
+            <div class="hcc-topbar">
+                <span class="hcc-dot" style="background:#ff5f56"></span>
+                <span class="hcc-dot" style="background:#ffbd2e"></span>
+                <span class="hcc-dot" style="background:#27c93f"></span>
+                <span class="hcc-filename">// aditya.js &nbsp;⚡</span>
+            </div>
+            <div class="hcc-body">
+                <span class="hcc-cm">// developer profile</span><br>
+                <span class="hcc-k">const</span> <span class="hcc-v">developer</span> = {<br>
+                &nbsp;&nbsp;name: <span class="hcc-s">"Aditya Raj"</span>,<br>
+                &nbsp;&nbsp;role: <span class="hcc-s">"Full Stack Dev"</span>,<br>
+                &nbsp;&nbsp;stack: [<span class="hcc-s">"MongoDB"</span>, <span class="hcc-s">"Express"</span>, <span class="hcc-s">"React"</span>, <span class="hcc-s">"Node"</span>],<br>
+                &nbsp;&nbsp;mobile: <span class="hcc-s">"React Native"</span>,<br>
+                &nbsp;&nbsp;also: [<span class="hcc-s">"Java"</span>, <span class="hcc-s">"PHP"</span>, <span class="hcc-s">"MySQL"</span>],<br>
+                &nbsp;&nbsp;hire: () =&gt; <span class="hcc-s">"Yes, please! ↗"</span><br>
+                };
+            </div>
+        </div>
+        <div class="hcc-skill-card hcc-mern-card">
+            <div class="hcc-skill-icon" style="background:rgba(0,229,255,0.1); border:1px solid rgba(0,229,255,0.2);">⚛️</div>
+            <div class="hcc-skill-info">
+                <p class="hcc-skill-label">MERN Stack</p>
+                <p class="hcc-skill-value">MongoDB · Express · React · Node.js</p>
+                <div class="hcc-bar"><div class="hcc-bar-fill" style="width:80%; background:linear-gradient(90deg,#61dafb,var(--accent));"></div></div>
+            </div>
+        </div>
+        <div class="hcc-skill-card hcc-rn-card">
+            <div class="hcc-skill-icon" style="background:rgba(97,218,251,0.1); border:1px solid rgba(97,218,251,0.2);">📱</div>
+            <div class="hcc-skill-info">
+                <p class="hcc-skill-label">React Native</p>
+                <p class="hcc-skill-value">Cross-Platform Mobile Apps</p>
+                <div class="hcc-bar"><div class="hcc-bar-fill" style="width:72%; background:linear-gradient(90deg,#61dafb,#7b61ff);"></div></div>
+            </div>
+        </div>
+        <div class="hcc-skill-card">
+            <div class="hcc-skill-icon" style="background:rgba(0,229,255,0.1); border:1px solid rgba(0,229,255,0.2);">🌐</div>
+            <div class="hcc-skill-info">
+                <p class="hcc-skill-label">Frontend Skills</p>
+                <p class="hcc-skill-value">HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; JavaScript &nbsp;·&nbsp; React</p>
+                <div class="hcc-bar"><div class="hcc-bar-fill" style="width:85%; background:linear-gradient(90deg,var(--accent),var(--accent-2));"></div></div>
+            </div>
+        </div>
+        <div class="hcc-skill-card">
+            <div class="hcc-skill-icon" style="background:rgba(123,97,255,0.1); border:1px solid rgba(123,97,255,0.2);">🐘</div>
+            <div class="hcc-skill-info">
+                <p class="hcc-skill-label">Backend Skills</p>
+                <p class="hcc-skill-value">Node.js &nbsp;·&nbsp; Java &nbsp;·&nbsp; PHP &nbsp;·&nbsp; Express</p>
+                <div class="hcc-bar"><div class="hcc-bar-fill" style="width:90%; background:linear-gradient(90deg,var(--accent-2),var(--accent));"></div></div>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section">
-    <h2 class="title type-effect">About Me</h2>
-
-    <div class="about-container">
-        <img src="image.jpg" alt="Aditya Raj" class="about-img">
-
-        <p class="desc">
-            My Name is Aditya Raj and i am a MCA student passionate about building modern web applications.
-            I enjoy transforming ideas into real-world projects using clean UI and strong logic.
-        </p>
+    <div class="section-inner">
+        <div class="section-label">// about_me</div>
+        <h2 class="section-title">Who Am I<span class="accent-dot">.</span></h2>
+        <div class="about-grid">
+            <div class="about-img-col">
+                <div class="about-img-wrap">
+                    <div class="about-img-frame">
+                        <img src="image.jpg" alt="Aditya Raj" class="about-img" onerror="this.src='https://ui-avatars.com/api/?name=Aditya+Raj&size=400&background=00e5ff&color=000&bold=true'">
+                    </div>
+                    <div class="about-img-deco"></div>
+                    <div class="about-img-glow"></div>
+                </div>
+                <div class="about-quick-info">
+                    <div class="aqi-item">
+                        <span class="aqi-icon">📍</span>
+                        <div><p class="aqi-label">Location</p><p class="aqi-val">Patna, Bihar, India</p></div>
+                    </div>
+                    <div class="aqi-item">
+                        <span class="aqi-icon">🎓</span>
+                        <div><p class="aqi-label">Degree</p><p class="aqi-val">MCA — 8.29 CGPA</p></div>
+                    </div>
+                    <div class="aqi-item">
+                        <span class="aqi-icon">💼</span>
+                        <div><p class="aqi-label">Status</p><p class="aqi-val aqi-green">Open to Work</p></div>
+                    </div>
+                    <div class="aqi-item">
+                        <span class="aqi-icon">🌐</span>
+                        <div><p class="aqi-label">Specialty</p><p class="aqi-val">MERN + React Native</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <p class="about-lead">I build things for the web & mobile — and occasionally break them creatively.</p>
+                <p class="about-body">I'm <strong>Aditya Raj</strong>, an MCA student at L.N. Mishra Institute, Patna, passionate about crafting modern, scalable web and mobile applications. I thrive at the intersection of clean code and intuitive design — transforming complex ideas into elegant digital experiences.</p>
+                <p class="about-body">Currently leveling up my <strong>MERN Stack</strong> (MongoDB, Express.js, React.js, Node.js) and <strong>React Native</strong> skills for cross-platform mobile development. I love building full-featured apps — from REST APIs to dynamic React frontends and native mobile experiences.</p>
+                <p class="about-body">When I'm not coding, you'll find me competing in hackathons, solving DSA problems on LeetCode & CodeChef, or performing on stage at college events.</p>
+                <div class="about-cards">
+                    <div class="about-mini-card">
+                        <div class="amc-icon">⚛️</div>
+                        <div><p class="amc-title">MERN Stack</p><p class="amc-sub">Full-stack JavaScript apps</p></div>
+                    </div>
+                    <div class="about-mini-card">
+                        <div class="amc-icon">📱</div>
+                        <div><p class="amc-title">React Native</p><p class="amc-sub">Cross-platform mobile apps</p></div>
+                    </div>
+                    <div class="about-mini-card">
+                        <div class="amc-icon">🧠</div>
+                        <div><p class="amc-title">DSA & Problem Solving</p><p class="amc-sub">CodeChef ⭐⭐ · LeetCode</p></div>
+                    </div>
+                    <div class="about-mini-card">
+                        <div class="amc-icon">🎭</div>
+                        <div><p class="amc-title">Stage Performer</p><p class="amc-sub">Singing · Dancing · Hosting</p></div>
+                    </div>
+                </div>
+                <div class="about-chips">
+                    <span>Problem Solver</span>
+                    <span>MERN Stack Dev</span>
+                    <span>React Native Dev</span>
+                    <span>Web Developer</span>
+                    <span>Hackathon Enthusiast</span>
+                    <span>OOP Expert</span>
+                    <span>Performer</span>
+                </div>
+            </div>
+        </div>
+        <div class="mern-banner">
+            <div class="mern-banner-label">// currently_mastering</div>
+            <div class="mern-pills">
+                <div class="mern-pill">
+                    <span class="mp-icon">🍃</span>
+                    <span class="mp-name">MongoDB</span>
+                    <span class="mp-desc">NoSQL Database</span>
+                </div>
+                <div class="mern-arrow">→</div>
+                <div class="mern-pill">
+                    <span class="mp-icon">🚂</span>
+                    <span class="mp-name">Express.js</span>
+                    <span class="mp-desc">Backend Framework</span>
+                </div>
+                <div class="mern-arrow">→</div>
+                <div class="mern-pill">
+                    <span class="mp-icon">⚛️</span>
+                    <span class="mp-name">React.js</span>
+                    <span class="mp-desc">Frontend Library</span>
+                </div>
+                <div class="mern-arrow">→</div>
+                <div class="mern-pill">
+                    <span class="mp-icon">🟢</span>
+                    <span class="mp-name">Node.js</span>
+                    <span class="mp-desc">JS Runtime</span>
+                </div>
+                <div class="mern-arrow">→</div>
+                <div class="mern-pill mern-pill-rn">
+                    <span class="mp-icon">📱</span>
+                    <span class="mp-name">React Native</span>
+                    <span class="mp-desc">Mobile Apps</span>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-<!-- ACADEMIC RESULTS -->
-<section id="academics" class="section">
-    <h2 class="title type-effect">Academic Results</h2>
 
-    <div class="projects">
-
-        <div class="project-card">
-            <img src="https://www.schoolmykids.com/smk-media/2018/04/Don-Bosco-Academy-McCluskieganj-Ranchi.jpg" alt="10th Result">
-            <h3>Matriculation</h3>
-<h3>(10th Standard)</h3>
-
-		<p>School: Don Bosco Academy,Patna</p>
-            <p>Board: Indian  Certificate Of Secondary Education(ICSE)</p>
-            <p>Percentage: 88.2%</p>
-            <p>Year: 2019</p>
-			<!--
-	<a href="crt4.jpg" target="_blank" class="btn">
-                View Marksheet
-            </a>
-			-->
-
+<!-- ACADEMICS -->
+<section id="academics" class="section section-alt">
+    <div class="section-inner">
+        <div class="section-label">// academic_journey</div>
+        <h2 class="section-title">Education<span class="accent-dot">.</span></h2>
+        <div class="timeline">
+            <div class="tl-item reveal">
+                <div class="tl-year">2019</div>
+                <div class="tl-card">
+                    <div class="tl-icon">🏫</div>
+                    <div class="tl-content">
+                        <h3>Matriculation (10th)</h3>
+                        <p class="tl-school">Don Bosco Academy, Patna</p>
+                        <p class="tl-board">ICSE Board</p>
+                        <div class="tl-score"><span class="score-val">88.2%</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tl-item reveal">
+                <div class="tl-year">2021</div>
+                <div class="tl-card">
+                    <div class="tl-icon">🎓</div>
+                    <div class="tl-content">
+                        <h3>Intermediate (12th)</h3>
+                        <p class="tl-school">Don Bosco Academy, Patna</p>
+                        <p class="tl-board">ISC Board</p>
+                        <div class="tl-score"><span class="score-val">90.5%</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tl-item reveal">
+                <div class="tl-year">2021–24</div>
+                <div class="tl-card">
+                    <div class="tl-icon">💻</div>
+                    <div class="tl-content">
+                        <h3>Bachelor of Computer Applications</h3>
+                        <p class="tl-school">L.N. Mishra Institute, Patna</p>
+                        <p class="tl-board">Aryabhatt Knowledge University</p>
+                        <div class="tl-score"><span class="score-val">8.32 CGPA</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tl-item reveal">
+                <div class="tl-year">2024–26</div>
+                <div class="tl-card tl-current">
+                    <div class="tl-badge">Current</div>
+                    <div class="tl-icon">🚀</div>
+                    <div class="tl-content">
+                        <h3>Master of Computer Applications</h3>
+                        <p class="tl-school">L.N. Mishra Institute, Patna</p>
+                        <p class="tl-board">Aryabhatt Knowledge University</p>
+                        <div class="tl-score"><span class="score-val">8.71 CGPA</span></div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="project-card">
-            <img src="https://www.schoolmykids.com/smk-media/2018/04/Don-Bosco-Academy-McCluskieganj-Ranchi.jpg" alt="12th Result">
-            <h3>Intermediate</h3>
-		<h3>(12th Standard)</h3>
-<p>School: Don Bosco Academy,Patna</p>
-
-            <p>Board: Indian School Certificate(ISC)</p>
-            <p>Percentage: 90.5%</p>
-            <p>Year: 2021</p>
-			<!--
-<a href="crt2.jpg" target="_blank" class="btn">
-                View Marksheet
-            </a> -->
-
-        </div>
-
-        <div class="project-card">
-            <img src="logolnmi.jpg" alt="BCA Result">
-            <h3>Bachelor of Computer Applications (BCA)</h3>
-            <p>College: L.N. Mishra Institute,Patna</p>
-            <p>University: Aryabhatt Knowledge University</p>
-            <p>CGPA: 8.32</p>
-            <p>Year: 2021-24</p>
-			<!--
-<a href="crt1.jpg" target="_blank" class="btn">
-                View Marksheet
-            </a> -->
-
-        </div>
-
-        <div class="project-card">
-            <img src="logolnmi.jpg" alt="MCA Result">
-            <h3>Master of Computer Applications (MCA)</h3>
-		<p>College: L.N. Mishra Institute,Patna</p>
-            <p>University: Aryabhatt Knowledge University</p>
-            <p>CGPA: 8.29</p>
-            <p>Year: 2024-26</p>
-			<!--
-<a href="crt5.jpg" target="_blank" class="btn">
-                View Marksheet
-            </a>
-			-->
-
-        </div>
-
     </div>
 </section>
-
 
 <!-- SKILLS -->
-<section id="skills" class="section glass">
-    <h2 class="title type-effect">Skills</h2>
+<section id="skills" class="section">
+    <div class="section-inner">
+        <div class="section-label">// technical_skills</div>
+        <h2 class="section-title">My Arsenal<span class="accent-dot">.</span></h2>
+        <div class="stack-tabs">
+            <button class="stack-tab active" data-stack="core">Core Languages</button>
+            <button class="stack-tab" data-stack="mern">MERN Stack</button>
+            <button class="stack-tab" data-stack="mobile">React Native</button>
+            <button class="stack-tab" data-stack="web">Web Tech</button>
+            <button class="stack-tab" data-stack="db">Databases</button>
+        </div>
 
-    <!-- ADDED TECHNOLOGY IMAGE -->
-    <img src="https://c.wallhere.com/photos/42/4a/JavaScript_Google_node_js_HTML_Microsoft_Visual_Studio_Python_programming_code_web_development-1790213.jpg!d" alt="Technologies" class="tech-banner">
+        <!-- Core Languages -->
+        <div class="stack-panel active" id="stack-core">
+            <div class="skills-layout">
+                <div class="skill-tabs">
+                    <button class="skill-tab active" data-skill="java">Java</button>
+                    <button class="skill-tab" data-skill="python">Python</button>
+                    <button class="skill-tab" data-skill="cpp">C++</button>
+                    <button class="skill-tab" data-skill="js">JavaScript</button>
+                    <button class="skill-tab" data-skill="php">PHP</button>
+                </div>
+                <div class="skill-display">
+                    <div class="skill-panel active" id="sp-java">
+                        <div class="sp-header"><span class="sp-icon">☕</span><h3>Java</h3></div>
+                        <div class="sp-bars">
+                            <div class="sp-row"><span>Knowledge</span><div class="sp-bar"><div class="sp-fill" style="--w:90%"></div></div><span class="sp-pct">90%</span></div>
+                            <div class="sp-row"><span>Implementation</span><div class="sp-bar"><div class="sp-fill" style="--w:85%"></div></div><span class="sp-pct">85%</span></div>
+                            <div class="sp-row"><span>Problem Solving</span><div class="sp-bar"><div class="sp-fill" style="--w:88%"></div></div><span class="sp-pct">88%</span></div>
+                            <div class="sp-row"><span>Experience</span><div class="sp-bar"><div class="sp-fill" style="--w:80%"></div></div><span class="sp-pct">80%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-panel" id="sp-python">
+                        <div class="sp-header"><span class="sp-icon">🐍</span><h3>Python</h3></div>
+                        <div class="sp-bars">
+                            <div class="sp-row"><span>Knowledge</span><div class="sp-bar"><div class="sp-fill" style="--w:75%"></div></div><span class="sp-pct">75%</span></div>
+                            <div class="sp-row"><span>Implementation</span><div class="sp-bar"><div class="sp-fill" style="--w:72%"></div></div><span class="sp-pct">72%</span></div>
+                            <div class="sp-row"><span>Problem Solving</span><div class="sp-bar"><div class="sp-fill" style="--w:78%"></div></div><span class="sp-pct">78%</span></div>
+                            <div class="sp-row"><span>Experience</span><div class="sp-bar"><div class="sp-fill" style="--w:70%"></div></div><span class="sp-pct">70%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-panel" id="sp-cpp">
+                        <div class="sp-header"><span class="sp-icon">⚙️</span><h3>C++</h3></div>
+                        <div class="sp-bars">
+                            <div class="sp-row"><span>Knowledge</span><div class="sp-bar"><div class="sp-fill" style="--w:90%"></div></div><span class="sp-pct">90%</span></div>
+                            <div class="sp-row"><span>Implementation</span><div class="sp-bar"><div class="sp-fill" style="--w:85%"></div></div><span class="sp-pct">85%</span></div>
+                            <div class="sp-row"><span>Problem Solving</span><div class="sp-bar"><div class="sp-fill" style="--w:85%"></div></div><span class="sp-pct">85%</span></div>
+                            <div class="sp-row"><span>Experience</span><div class="sp-bar"><div class="sp-fill" style="--w:80%"></div></div><span class="sp-pct">80%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-panel" id="sp-js">
+                        <div class="sp-header"><span class="sp-icon">⚡</span><h3>JavaScript</h3></div>
+                        <div class="sp-bars">
+                            <div class="sp-row"><span>Knowledge</span><div class="sp-bar"><div class="sp-fill" style="--w:75%"></div></div><span class="sp-pct">75%</span></div>
+                            <div class="sp-row"><span>Implementation</span><div class="sp-bar"><div class="sp-fill" style="--w:81%"></div></div><span class="sp-pct">81%</span></div>
+                            <div class="sp-row"><span>Problem Solving</span><div class="sp-bar"><div class="sp-fill" style="--w:82%"></div></div><span class="sp-pct">82%</span></div>
+                            <div class="sp-row"><span>Experience</span><div class="sp-bar"><div class="sp-fill" style="--w:72%"></div></div><span class="sp-pct">72%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-panel" id="sp-php">
+                        <div class="sp-header"><span class="sp-icon">🐘</span><h3>PHP</h3></div>
+                        <div class="sp-bars">
+                            <div class="sp-row"><span>Knowledge</span><div class="sp-bar"><div class="sp-fill" style="--w:90%"></div></div><span class="sp-pct">90%</span></div>
+                            <div class="sp-row"><span>Implementation</span><div class="sp-bar"><div class="sp-fill" style="--w:90%"></div></div><span class="sp-pct">90%</span></div>
+                            <div class="sp-row"><span>Problem Solving</span><div class="sp-bar"><div class="sp-fill" style="--w:85%"></div></div><span class="sp-pct">85%</span></div>
+                            <div class="sp-row"><span>Experience</span><div class="sp-bar"><div class="sp-fill" style="--w:90%"></div></div><span class="sp-pct">90%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div class="skill-interactive">
+        <!-- MERN Stack Panel -->
+        <div class="stack-panel" id="stack-mern">
+            <div class="mern-showcase">
+                <div class="mern-tech-card reveal" data-mern="mongo">
+                    <div class="mtc-header"><span class="mtc-icon">🍃</span><div><h3>MongoDB</h3><p class="mtc-type">NoSQL Database</p></div><span class="mtc-level">Learning</span></div>
+                    <p class="mtc-desc">Document-based NoSQL database. Schema design, CRUD operations, aggregation pipelines, and Mongoose ODM for Node.js integration.</p>
+                    <div class="mtc-tags"><span>Documents</span><span>Collections</span><span>Mongoose</span><span>Atlas</span></div>
+                    <div class="mtc-bar-row"><span>Progress</span><div class="sp-bar"><div class="sp-fill" style="--w:70%"></div></div><span class="sp-pct">70%</span></div>
+                </div>
+                <div class="mern-tech-card reveal" data-mern="express">
+                    <div class="mtc-header"><span class="mtc-icon">🚂</span><div><h3>Express.js</h3><p class="mtc-type">Backend Framework</p></div><span class="mtc-level">Learning</span></div>
+                    <p class="mtc-desc">Minimal Node.js web framework. Building RESTful APIs, middleware, routing, authentication with JWT, and connecting to MongoDB.</p>
+                    <div class="mtc-tags"><span>REST APIs</span><span>Middleware</span><span>JWT Auth</span><span>Routing</span></div>
+                    <div class="mtc-bar-row"><span>Progress</span><div class="sp-bar"><div class="sp-fill" style="--w:72%"></div></div><span class="sp-pct">72%</span></div>
+                </div>
+                <div class="mern-tech-card reveal" data-mern="react">
+                    <div class="mtc-header"><span class="mtc-icon">⚛️</span><div><h3>React.js</h3><p class="mtc-type">Frontend Library</p></div><span class="mtc-level">Learning</span></div>
+                    <p class="mtc-desc">Component-based UI library. Hooks (useState, useEffect), React Router, Context API, and building dynamic SPAs with reusable components.</p>
+                    <div class="mtc-tags"><span>Components</span><span>Hooks</span><span>React Router</span><span>Context API</span></div>
+                    <div class="mtc-bar-row"><span>Progress</span><div class="sp-bar"><div class="sp-fill" style="--w:75%"></div></div><span class="sp-pct">75%</span></div>
+                </div>
+                <div class="mern-tech-card reveal" data-mern="node">
+                    <div class="mtc-header"><span class="mtc-icon">🟢</span><div><h3>Node.js</h3><p class="mtc-type">JavaScript Runtime</p></div><span class="mtc-level">Learning</span></div>
+                    <p class="mtc-desc">Server-side JavaScript runtime. Async programming, event loop, npm ecosystem, file system operations, and server setup with Express.</p>
+                    <div class="mtc-tags"><span>npm</span><span>Async/Await</span><span>Event Loop</span><span>REST Server</span></div>
+                    <div class="mtc-bar-row"><span>Progress</span><div class="sp-bar"><div class="sp-fill" style="--w:73%"></div></div><span class="sp-pct">73%</span></div>
+                </div>
+            </div>
+            <div class="mern-flow">
+                <div class="mf-node mf-client"><span>⚛️</span>React Client</div>
+                <div class="mf-arrow">HTTP / REST</div>
+                <div class="mf-node mf-server"><span>🟢</span>Node + Express</div>
+                <div class="mf-arrow">Mongoose ODM</div>
+                <div class="mf-node mf-db"><span>🍃</span>MongoDB</div>
+            </div>
+        </div>
 
-    <div class="skill-buttons">
-        <button data-skill="html" class="skill-btn active">HTML</button>
-        <button data-skill="css" class="skill-btn">CSS</button>
-        <button data-skill="js" class="skill-btn">JavaScript</button>
-        <button data-skill="java" class="skill-btn">Java</button>
-        <button data-skill="python" class="skill-btn">Python</button>
-  <button data-skill="C++" class="skill-btn">C++</button>
-  <button data-skill="PHP" class="skill-btn">PHP</button>
-  <button data-skill="MySql" class="skill-btn">MySql</button>
+        <!-- React Native Panel -->
+        <div class="stack-panel" id="stack-mobile">
+            <div class="rn-showcase">
+                <div class="rn-info-card">
+                    <div class="rn-info-header">
+                        <span class="rn-big-icon">📱</span>
+                        <div>
+                            <h3>React Native</h3>
+                            <p class="rn-sub">Cross-Platform Mobile Development</p>
+                        </div>
+                        <span class="mtc-level">Learning</span>
+                    </div>
+                    <p class="rn-desc">Building cross-platform mobile applications for both Android and iOS using a single JavaScript codebase. Leveraging React Native's component model, native device APIs, and the Expo ecosystem for rapid development.</p>
+                    <div class="rn-bars">
+                        <div class="sp-row"><span>Core Concepts</span><div class="sp-bar"><div class="sp-fill" style="--w:75%"></div></div><span class="sp-pct">75%</span></div>
+                        <div class="sp-row"><span>UI Components</span><div class="sp-bar"><div class="sp-fill" style="--w:72%"></div></div><span class="sp-pct">72%</span></div>
+                        <div class="sp-row"><span>Navigation</span><div class="sp-bar"><div class="sp-fill" style="--w:70%"></div></div><span class="sp-pct">70%</span></div>
+                        <div class="sp-row"><span>State Management</span><div class="sp-bar"><div class="sp-fill" style="--w:68%"></div></div><span class="sp-pct">68%</span></div>
+                    </div>
+                </div>
+                <div class="rn-tech-grid">
+                    <div class="rn-tech-pill"><span>⚛️</span>React Native CLI</div>
+                    <div class="rn-tech-pill"><span>🚀</span>Expo</div>
+                    <div class="rn-tech-pill"><span>🧭</span>React Navigation</div>
+                    <div class="rn-tech-pill"><span>🗃️</span>AsyncStorage</div>
+                    <div class="rn-tech-pill"><span>🎨</span>StyleSheet API</div>
+                    <div class="rn-tech-pill"><span>🌐</span>Axios / Fetch</div>
+                    <div class="rn-tech-pill"><span>🔔</span>Push Notifications</div>
+                    <div class="rn-tech-pill"><span>📦</span>Redux / Context</div>
+                </div>
+            </div>
+            <div class="rn-projects-mini">
+                <p class="rn-mini-label">// Built with React Native</p>
+                <div class="rn-mini-grid">
+                    <div class="rn-mini-card"><span>💰</span><div><p>Expense Tracker</p><p class="rn-mini-sub">Track & categorize expenses</p></div></div>
+                    <div class="rn-mini-card"><span>📅</span><div><p>Attendance Manager</p><p class="rn-mini-sub">Student attendance tracking</p></div></div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Web Tech Panel -->
+        <div class="stack-panel" id="stack-web">
+            <div class="skills-layout">
+                <div class="skill-tabs">
+                    <button class="skill-tab active" data-skill="html">HTML</button>
+                    <button class="skill-tab" data-skill="css">CSS</button>
+                    <button class="skill-tab" data-skill="js2">JavaScript</button>
+                </div>
+                <div class="skill-display">
+                    <div class="skill-panel active" id="sp-html">
+                        <div class="sp-header"><span class="sp-icon">🌐</span><h3>HTML5</h3></div>
+                        <div class="sp-bars">
+                            <div class="sp-row"><span>Knowledge</span><div class="sp-bar"><div class="sp-fill" style="--w:90%"></div></div><span class="sp-pct">90%</span></div>
+                            <div class="sp-row"><span>Implementation</span><div class="sp-bar"><div class="sp-fill" style="--w:85%"></div></div><span class="sp-pct">85%</span></div>
+                            <div class="sp-row"><span>Problem Solving</span><div class="sp-bar"><div class="sp-fill" style="--w:80%"></div></div><span class="sp-pct">80%</span></div>
+                            <div class="sp-row"><span>Experience</span><div class="sp-bar"><div class="sp-fill" style="--w:90%"></div></div><span class="sp-pct">90%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-panel" id="sp-css">
+                        <div class="sp-header"><span class="sp-icon">🎨</span><h3>CSS3</h3></div>
+                        <div class="sp-bars">
+                            <div class="sp-row"><span>Knowledge</span><div class="sp-bar"><div class="sp-fill" style="--w:85%"></div></div><span class="sp-pct">85%</span></div>
+                            <div class="sp-row"><span>Implementation</span><div class="sp-bar"><div class="sp-fill" style="--w:80%"></div></div><span class="sp-pct">80%</span></div>
+                            <div class="sp-row"><span>Problem Solving</span><div class="sp-bar"><div class="sp-fill" style="--w:75%"></div></div><span class="sp-pct">75%</span></div>
+                            <div class="sp-row"><span>Experience</span><div class="sp-bar"><div class="sp-fill" style="--w:70%"></div></div><span class="sp-pct">70%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-panel" id="sp-js2">
+                        <div class="sp-header"><span class="sp-icon">⚡</span><h3>JavaScript</h3></div>
+                        <div class="sp-bars">
+                            <div class="sp-row"><span>Knowledge</span><div class="sp-bar"><div class="sp-fill" style="--w:75%"></div></div><span class="sp-pct">75%</span></div>
+                            <div class="sp-row"><span>Implementation</span><div class="sp-bar"><div class="sp-fill" style="--w:81%"></div></div><span class="sp-pct">81%</span></div>
+                            <div class="sp-row"><span>Problem Solving</span><div class="sp-bar"><div class="sp-fill" style="--w:82%"></div></div><span class="sp-pct">82%</span></div>
+                            <div class="sp-row"><span>Experience</span><div class="sp-bar"><div class="sp-fill" style="--w:72%"></div></div><span class="sp-pct">72%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Databases Panel -->
+        <div class="stack-panel" id="stack-db">
+            <div class="skills-layout">
+                <div class="skill-tabs">
+                    <button class="skill-tab active" data-skill="mysql">MySQL</button>
+                    <button class="skill-tab" data-skill="mongo2">MongoDB</button>
+                </div>
+                <div class="skill-display">
+                    <div class="skill-panel active" id="sp-mysql">
+                        <div class="sp-header"><span class="sp-icon">🗄️</span><h3>MySQL</h3></div>
+                        <div class="sp-bars">
+                            <div class="sp-row"><span>Knowledge</span><div class="sp-bar"><div class="sp-fill" style="--w:75%"></div></div><span class="sp-pct">75%</span></div>
+                            <div class="sp-row"><span>Implementation</span><div class="sp-bar"><div class="sp-fill" style="--w:80%"></div></div><span class="sp-pct">80%</span></div>
+                            <div class="sp-row"><span>Problem Solving</span><div class="sp-bar"><div class="sp-fill" style="--w:80%"></div></div><span class="sp-pct">80%</span></div>
+                            <div class="sp-row"><span>Experience</span><div class="sp-bar"><div class="sp-fill" style="--w:70%"></div></div><span class="sp-pct">70%</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-panel" id="sp-mongo2">
+                        <div class="sp-header"><span class="sp-icon">🍃</span><h3>MongoDB</h3></div>
+                        <div class="sp-bars">
+                            <div class="sp-row"><span>Knowledge</span><div class="sp-bar"><div class="sp-fill" style="--w:70%"></div></div><span class="sp-pct">70%</span></div>
+                            <div class="sp-row"><span>Implementation</span><div class="sp-bar"><div class="sp-fill" style="--w:68%"></div></div><span class="sp-pct">68%</span></div>
+                            <div class="sp-row"><span>Problem Solving</span><div class="sp-bar"><div class="sp-fill" style="--w:65%"></div></div><span class="sp-pct">65%</span></div>
+                            <div class="sp-row"><span>Experience</span><div class="sp-bar"><div class="sp-fill" style="--w:60%"></div></div><span class="sp-pct">60%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
- <div class="skill-details">
-<div class="skill-panel active" id="html">
-    <div class="row"><span>Knowledge</span><div class="bar"><div style="--w:90%"></div></div></div>
-    <div class="row"><span>Implementation</span><div class="bar"><div style="--w:85%"></div></div></div>
-    <div class="row"><span>Problem Solving</span><div class="bar"><div style="--w:80%"></div></div></div>
-    <div class="row"><span>Experience</span><div class="bar"><div style="--w:90%"></div></div></div>
-</div>
-
-<div class="skill-panel" id="css">
-    <div class="row"><span>Knowledge</span><div class="bar"><div style="--w:85%"></div></div></div>
-    <div class="row"><span>Implementation</span><div class="bar"><div style="--w:80%"></div></div></div>
-    <div class="row"><span>Problem Solving</span><div class="bar"><div style="--w:75%"></div></div></div>
-    <div class="row"><span>Experience</span><div class="bar"><div style="--w:70%"></div></div></div>
-</div>
-
-<div class="skill-panel" id="js">
-    <div class="row"><span>Knowledge</span><div class="bar"><div style="--w:75%"></div></div></div>
-    <div class="row"><span>Implementation</span><div class="bar"><div style="--w:81%"></div></div></div>
-    <div class="row"><span>Problem Solving</span><div class="bar"><div style="--w:82%"></div></div></div>
-    <div class="row"><span>Experience</span><div class="bar"><div style="--w:72%"></div></div></div>
-</div>
-
-<div class="skill-panel" id="java">
-    <div class="row"><span>Knowledge</span><div class="bar"><div style="--w:90%"></div></div></div>
-    <div class="row"><span>Implementation</span><div class="bar"><div style="--w:85%"></div></div></div>
-    <div class="row"><span>Problem Solving</span><div class="bar"><div style="--w:88%"></div></div></div>
-    <div class="row"><span>Experience</span><div class="bar"><div style="--w:80%"></div></div></div>
-</div>
-
-<div class="skill-panel" id="python">
-    <div class="row"><span>Knowledge</span><div class="bar"><div style="--w:75%"></div></div></div>
-    <div class="row"><span>Implementation</span><div class="bar"><div style="--w:72%"></div></div></div>
-    <div class="row"><span>Problem Solving</span><div class="bar"><div style="--w:78%"></div></div></div>
-    <div class="row"><span>Experience</span><div class="bar"><div style="--w:70%"></div></div></div>
-</div>
-<div class="skill-panel" id="C++">
-    <div class="row"><span>Knowledge</span><div class="bar"><div style="--w:90%"></div></div></div>
-    <div class="row"><span>Implementation</span><div class="bar"><div style="--w:85%"></div></div></div>
-    <div class="row"><span>Problem Solving</span><div class="bar"><div style="--w:85%"></div></div></div>
-    <div class="row"><span>Experience</span><div class="bar"><div style="--w:80%"></div></div></div>
-</div>
-<div class="skill-panel" id="PHP">
-    <div class="row"><span>Knowledge</span><div class="bar"><div style="--w:90%"></div></div></div>
-    <div class="row"><span>Implementation</span><div class="bar"><div style="--w:90%"></div></div></div>
-    <div class="row"><span>Problem Solving</span><div class="bar"><div style="--w:85%"></div></div></div>
-    <div class="row"><span>Experience</span><div class="bar"><div style="--w:90%"></div></div></div>
-</div>
-<div class="skill-panel" id="MySql">
-    <div class="row"><span>Knowledge</span><div class="bar"><div style="--w:75%"></div></div></div>
-    <div class="row"><span>Implementation</span><div class="bar"><div style="--w:80%"></div></div></div>
-    <div class="row"><span>Problem Solving</span><div class="bar"><div style="--w:80%"></div></div></div>
-    <div class="row"><span>Experience</span><div class="bar"><div style="--w:70%"></div></div></div>
-</div>
-</div>
 </section>
+
 <!-- CODING PROFILES -->
-<section id="coding" class="section">
-    <h2 class="title type-effect">Coding Profiles</h2>
-
-    <div class="projects">
-
-        <div class="project-card">
- <img src="https://www.mycplus.com/mycplus/wp-content/uploads/2018/03/codechef-1536x750.jpg" alt="culture">
-
-            <h3>🍽️ CodeChef</h3>
-            <p>
-                Competitive programming profile showcasing problem-solving skills
-                and consistency.2 Star Coder.
-            </p>
-            <a href="https://www.codechef.com/users/aditya_7391"
-               target="_blank"
-               class="btn">
-                View CodeChef Profile
-            </a>
+<section id="coding" class="section section-alt">
+    <div class="section-inner">
+        <div class="section-label">// coding_profiles</div>
+        <h2 class="section-title">Where I Code<span class="accent-dot">.</span></h2>
+        <div class="card-grid">
+            <div class="pf-card reveal">
+                <div class="pf-icon">🍽️</div>
+                <h3>CodeChef</h3>
+                <div class="pf-badge">⭐⭐ 2 Star</div>
+                <p>Competitive programming profile showcasing problem-solving skills and algorithmic consistency.</p>
+                <a href="https://www.codechef.com/users/aditya_7391" target="_blank" class="btn btn-card">View Profile ↗</a>
+            </div>
+            <div class="pf-card reveal">
+                <div class="pf-icon">🧠</div>
+                <h3>LeetCode</h3>
+                <div class="pf-badge">DSA Focus</div>
+                <p>Practice-focused profile highlighting data structures, algorithms, and logical problem-solving.</p>
+                <a href="https://leetcode.com/aditya_7391" target="_blank" class="btn btn-card">View Profile ↗</a>
+            </div>
+            <div class="pf-card reveal">
+                <div class="pf-icon">📚</div>
+                <h3>GeeksforGeeks</h3>
+                <div class="pf-badge">Learning Hub</div>
+                <p>Technical learning and problem-solving profile focused on Data Structures and Algorithms.</p>
+                <a href="https://auth.geeksforgeeks.org/user/YOUR_GFG_USERNAME" target="_blank" class="btn btn-card">View Profile ↗</a>
+            </div>
         </div>
-
-        <div class="project-card">
-<img src="https://www.krammerliu.com/images/post/leetcode.jpeg" alt="culture">
-            <h3>🧠 LeetCode</h3>
-            <p>
-                Practice-focused coding profile highlighting data structures,
-                algorithms, and logical 
-problem-solving.
-            </p>
-            <a href="https://leetcode.com/aditya_7391"
-               target="_blank"
-               class="btn">
-                View LeetCode Profile
-            </a>
-        </div>
-<div class="project-card">
-    <img src="https://storage.googleapis.com/kaggle-datasets-images/1953020/3220116/a89a095579fd8e74c1c7363f41955072/dataset-cover.png?t=2022-02-23-14-01-13?t=2022-02-23-14-09-26" alt="GeeksforGeeks">
-    <h3>📚 GeeksforGeeks</h3>
-    <p>
-        Technical learning and problem-solving profile focused on
-        Data Structures, Algorithms.
-    </p>
-    <a href="https://auth.geeksforgeeks.org/user/YOUR_GFG_USERNAME"
-       target="_blank"
-       class="btn">
-        View GFG Profile
-    </a>
-</div>
-
-
     </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- PROJECTS — ALL 9 -->
 <section id="projects" class="section">
-    <h2 class="title type-effect">Projects</h2>
+    <div class="section-inner">
+        <div class="section-label">// selected_work</div>
+        <h2 class="section-title">Projects<span class="accent-dot">.</span></h2>
 
-    <div class="projects">
-        <div class="project-card">
-            <img src="https://imgs.search.brave.com/e5DvRGawQ5D9tRNoWotyuOMyVvcEuIso98s59JNGjFQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTA2/MDczNTgzNi9waG90/by9hYnN0cmFjdC10/aWMtdGFjLXRvZS1n/YW1lLWNvbXBldGl0/aW9uLXhvLXdpbi1j/aGFsbGVuZ2UtY29u/Y2VwdC1vbi1ibGFj/ay1ib2FyZC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9azVN/ak5pYmkzRUZnR2M1/X3RMYmdLUFdyVk9k/RWlkb2ZqTXFtVVNt/VExubz0">
-            <h3>Tic Tac Toe Game</h3>
-            <p>Java GUI based game with logic handling.</p>
+        <!-- Filter Tabs -->
+        <div class="proj-filter-tabs">
+            <button class="proj-filter active" data-filter="all">All (9)</button>
+            <button class="proj-filter" data-filter="mern">MERN Stack</button>
+            <button class="proj-filter" data-filter="mobile">React Native</button>
+            <button class="proj-filter" data-filter="web">Web</button>
+            <button class="proj-filter" data-filter="java">Java / Python</button>
         </div>
 
-        <div class="project-card">
-            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/85a4f172447227.5be80d741c20d.png">
-            <h3>Student Management System</h3>
-            <p>CRUD system for managing student records.</p>
-        </div>
- <div class="project-card">
-            <img src="https://wallpapers.com/images/hd/cool-calculator-with-formulas-gy7fwb9k68gum8hc.jpg">
-            <h3>Arithmetic Calculator</h3>
-            <p>Used For Performing Mathematical Calculations</p>
-        </div>
+        <div class="projects-grid">
 
+            <!-- 01 Chat App -->
+            <div class="proj-card reveal" data-num="01" data-category="mern">
+                <div class="proj-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=600&q=80" alt="Chat App">
+                    <div class="proj-overlay"><span>View Project</span></div>
+                    <div class="proj-tech-badge mern-badge">MERN</div>
+                </div>
+                <div class="proj-info">
+                    <div class="proj-tags"><span>MongoDB</span><span>Express.js</span><span>React</span><span>Node.js</span><span>Socket.io</span></div>
+                    <h3>Real-Time Chat App</h3>
+                    <p>Full-stack real-time chat application with WebSocket-based messaging using Socket.io. Features include user authentication, private & group chats, online status, and message history stored in MongoDB.</p>
+                </div>
+            </div>
 
-        <div class="project-card">
-            <img src="https://imgs.search.brave.com/rHvij9Y01LyvpPF4iWNreV-bnKr5IzPE6DmPB_SCWU8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/NDkyOTgxNzM2MDMt/OWM5NWFhOTUwODc5/P2ZtPWpwZyZxPTYw/Jnc9MzAwMCZpeGxp/Yj1yYi00LjEuMCZp/eGlkPU0zd3hNakEz/ZkRCOE1IeHpaV0Z5/WTJoOE1URjhmR05o/YkdWdVpHRnlmR1Z1/ZkRCOGZEQjhmSHd3">
-            <h3>Python Calendar</h3>
-            <p>Logic-based full year calendar generator.</p>
+            <!-- 02 Law Firm -->
+            <div class="proj-card reveal" data-num="02" data-category="web">
+                <div class="proj-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&q=80" alt="Law Firm">
+                    <div class="proj-overlay"><span>View Project</span></div>
+                    <div class="proj-tech-badge web-badge">Web</div>
+                </div>
+                <div class="proj-info">
+                    <div class="proj-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <h3>VLaw — Law Firm Website</h3>
+                    <p>Professional law firm website with elegant dark UI, practice areas showcase, attorney profiles, case study sections, client testimonials, and a contact form. Fully responsive design built with vanilla HTML, CSS & JS.</p>
+                </div>
+            </div>
+
+            <!-- 03 Expense Tracker -->
+            <div class="proj-card reveal" data-num="03" data-category="mobile">
+                <div class="proj-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&q=80" alt="Expense Tracker">
+                    <div class="proj-overlay"><span>View Project</span></div>
+                    <div class="proj-tech-badge rn-badge">React Native</div>
+                </div>
+                <div class="proj-info">
+                    <div class="proj-tags"><span>React Native</span><span>React</span><span>Express</span><span>Node.js</span><span>MongoDB</span><span>Expo</span><span>AsyncStorage</span></div>
+                    <h3>Expense Tracker</h3>
+                    <p>Cross-platform mobile app to track daily expenses and income. Features category-wise breakdown, monthly summaries, data visualizations, and persistent local storage. Built with React Native and Expo.</p>
+                </div>
+            </div>
+
+            <!-- 04 Todo App -->
+            <div class="proj-card reveal" data-num="04" data-category="mern">
+                <div class="proj-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&q=80" alt="Todo App">
+                    <div class="proj-overlay"><span>View Project</span></div>
+                    <div class="proj-tech-badge mern-badge">MERN</div>
+                </div>
+                <div class="proj-info">
+                    <div class="proj-tags"><span>MongoDB</span><span>Express.js</span><span>React</span><span>Node.js</span></div>
+                    <h3>Todo App</h3>
+                    <p>Full-stack task management application with CRUD operations, user authentication, task prioritization, due dates, and category filtering. React frontend with a Node/Express REST API and MongoDB backend.</p>
+                </div>
+            </div>
+
+            <!-- 05 Notes App -->
+            <div class="proj-card reveal" data-num="05" data-category="mern">
+                <div class="proj-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?w=600&q=80" alt="Notes App">
+                    <div class="proj-overlay"><span>View Project</span></div>
+                    <div class="proj-tech-badge mern-badge">MERN</div>
+                </div>
+                <div class="proj-info">
+                    <div class="proj-tags"><span>MongoDB</span><span>Express.js</span><span>React</span><span>Node.js</span></div>
+                    <h3>Notes App</h3>
+                    <p>Feature-rich note-taking web app with rich text editing, tag-based organization, search functionality, and secure JWT-based user accounts. All notes synced with MongoDB via a RESTful API.</p>
+                </div>
+            </div>
+
+            <!-- 06 Attendance Manager -->
+            <div class="proj-card reveal" data-num="06" data-category="mobile">
+                <div class="proj-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=600&q=80" alt="Attendance Manager">
+                    <div class="proj-overlay"><span>View Project</span></div>
+                    <div class="proj-tech-badge rn-badge">React Native</div>
+                </div>
+                <div class="proj-info">
+                    <div class="proj-tags"><span>React Native</span><span>Expo</span><span>AsyncStorage</span></div>
+                    <h3>Attendance Manager App</h3>
+                    <p>Mobile app for students to track subject-wise attendance. Mark present/absent, view percentage per subject, get alerts when below threshold, and see monthly calendar view — all stored locally with AsyncStorage.</p>
+                </div>
+            </div>
+
+            <!-- 07 Student Management System -->
+            <div class="proj-card reveal" data-num="07" data-category="web">
+                <div class="proj-img-wrap">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/85a4f172447227.5be80d741c20d.png" alt="SMS">
+                    <div class="proj-overlay"><span>View Project</span></div>
+                    <div class="proj-tech-badge web-badge">Web</div>
+                </div>
+                <div class="proj-info">
+                    <div class="proj-tags"><span>PHP</span><span>MySQL</span><span>CRUD</span></div>
+                    <h3>Student Management System</h3>
+                    <p>Full CRUD system for managing student records with database integration, search, filter, and report generation.</p>
+                </div>
+            </div>
+
+            <!-- 08 Tic Tac Toe -->
+            <div class="proj-card reveal" data-num="08" data-category="java">
+                <div class="proj-img-wrap">
+                    <img src="https://imgs.search.brave.com/e5DvRGawQ5D9tRNoWotyuOMyVvcEuIso98s59JNGjFQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTA2/MDczNTgzNi9waG90/by9hYnN0cmFjdC10/aWMtdGFjLXRvZS1n/YW1lLWNvbXBldGl0/aW9uLXhvLXdpbi1j/aGFsbGVuZ2UtY29u/Y2VwdC1vbi1ibGFj/ay1ib2FyZC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9azVN/ak5pYmkzRUZnR2M1/X3RMYmdLUFdyVk9k/RWlkb2ZqTXFtVVNt/VExubz0" alt="Tic Tac Toe">
+                    <div class="proj-overlay"><span>View Project</span></div>
+                    <div class="proj-tech-badge java-badge">Java</div>
+                </div>
+                <div class="proj-info">
+                    <div class="proj-tags"><span>Java</span><span>GUI</span><span>Swing</span></div>
+                    <h3>Tic Tac Toe Game</h3>
+                    <p>Java GUI based game with complete game logic, win detection, restart functionality, and interactive Swing-based interface.</p>
+                </div>
+            </div>
+
+            <!-- 09 Python Calendar -->
+            <div class="proj-card reveal" data-num="09" data-category="java">
+                <div class="proj-img-wrap">
+                    <img src="https://imgs.search.brave.com/rHvij9Y01LyvpPF4iWNreV-bnKr5IzPE6DmPB_SCWU8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/NDkyOTgxNzM2MDMt/OWM5NWFhOTUwODc5/P2ZtPWpwZyZxPTYw/Jnc9MzAwMCZpeGxp/Yj1yYi00LjEuMCZp/eGlkPU0zd3hNakEz/ZkRCOE1IeHpaV0Z5/WTJoOE1URjhmR05o/YkdWdVpHRnlmR1Z1/ZkRCOGZEQjhmSHd3" alt="Calendar">
+                    <div class="proj-overlay"><span>View Project</span></div>
+                    <div class="proj-tech-badge java-badge">Python</div>
+                </div>
+                <div class="proj-info">
+                    <div class="proj-tags"><span>Python</span><span>Logic</span></div>
+                    <h3>Python Calendar</h3>
+                    <p>Logic-based full year calendar generator with date management, holiday highlighting, and week calculation.</p>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
+
 <!-- ACHIEVEMENTS -->
-<section id="achievements" class="section">
-    <h2 class="title type-effect">Achievements</h2>
-
-    <div class="projects">
-
-        <div class="project-card">
-            <img src="https://miro.medium.com/v2/resize:fit:1200/0*XDkvtDSZ22rR5Zvy.png" alt="Hackathon">
-            <h3>🏆 Hackathon Participation</h3>
-            <p>
-                Participated in ByteVerse Hackathon 2023, working on real-world problem-solving challenges.
-            </p>
+<section id="achievements" class="section section-alt">
+    <div class="section-inner">
+        <div class="section-label">// highlights</div>
+        <h2 class="section-title">Achievements<span class="accent-dot">.</span></h2>
+        <div class="ach-grid">
+            <div class="ach-card reveal">
+                <div class="ach-num">01</div>
+                <div class="ach-icon">🏆</div>
+                <h3>Hackathon Participation</h3>
+                <p>Participated in ByteVerse Hackathon 2023, working on real-world problem-solving challenges.</p>
+            </div>
+            <div class="ach-card reveal">
+                <div class="ach-num">02</div>
+                <div class="ach-icon">💻</div>
+                <h3>9+ Projects Built</h3>
+                <p>Developed 9+ projects spanning MERN Stack, React Native mobile apps, and Web technologies.</p>
+            </div>
+            <div class="ach-card reveal">
+                <div class="ach-num">03</div>
+                <div class="ach-icon">🎭</div>
+                <h3>Cultural & Event Activities</h3>
+                <p>Actively hosted and organized college functions, performed in singing and dancing events.</p>
+            </div>
+            <div class="ach-card reveal">
+                <div class="ach-num">04</div>
+                <div class="ach-icon">🎯</div>
+                <h3>Academic Consistency</h3>
+                <p>Maintained consistent academic performance across BCA and MCA with strong CS fundamentals.</p>
+            </div>
         </div>
-
-        <div class="project-card">
-            <img src="https://justicegroup.org/wp-content/uploads/2018/10/projectmanagement.jpg" alt="Projects">
-            <h3>💻 Project Development</h3>
-            <p>
-                Developed multiple academic and personal projects using Java, Python, and Web technologies.
-            </p>
-        </div>
- <div class="project-card">
- <img src="https://img.freepik.com/free-vector/modern-people-doing-cultural-activities_23-2148599167.jpg" alt="culture">
-
-                   <h3>🎭 Cultural & Event Activities</h3>
-           <p>
-    Actively participated in hosting and organizing college functions, and performed in singing and dancing events.
-</p>
-</div>
-
-
-       
-        <div class="project-card">
-            <img src="https://assets-global.website-files.com/620e4101b2ce12a1a6bff0e8/65b4c37625fcf4d0e624bacb_Header_When%20is%20the%20best%20time%20to%20study_March23.webp" alt="Academics">
-            <h3>🎯 Academic Consistency</h3>
-            <p>
-                Maintained consistent academic performance across BCA and MCA with strong CS fundamentals.
-            </p>
-        </div>
-
     </div>
 </section>
 
 <!-- CERTIFICATIONS -->
 <section id="certifications" class="section">
-    <h2 class="title type-effect">Certifications</h2>
-
-    <div class="projects">
-
-        <div class="project-card">
-            <img src="cert2.jpg" alt="Python Internship Certificate">
-            <h3>Python Internship Certification</h3>
-            <p>Pandas, NumPy, Matplotlib</p>
-            <a href="cert2.jpg" target="_blank" class="btn">
-                View Certificate
-            </a>
+    <div class="section-inner">
+        <div class="section-label">// credentials</div>
+        <h2 class="section-title">Certifications<span class="accent-dot">.</span></h2>
+        <div class="cert-grid">
+            <div class="cert-card reveal">
+                <div class="cert-front"><div class="cert-icon">🐍</div><h3>Python Internship</h3><p>Pandas · NumPy · Matplotlib</p></div>
+                <a href="cert2.jpg" target="_blank" class="cert-btn">View ↗</a>
+            </div>
+            <div class="cert-card reveal">
+                <div class="cert-front"><div class="cert-icon">⚔️</div><h3>ByteVerse Hackathon 2023</h3><p>Java · Problem Solving</p></div>
+                <a href="cert1.jpg" target="_blank" class="cert-btn">View ↗</a>
+            </div>
+            <div class="cert-card reveal">
+                <div class="cert-front"><div class="cert-icon">☕</div><h3>Java Certification</h3><p>Core Java · OOP</p></div>
+                <a href="cert11.pdf" target="_blank" class="cert-btn">View ↗</a>
+            </div>
+            <div class="cert-card reveal">
+                <div class="cert-front"><div class="cert-icon">🥉</div><h3>PresentX 2.1</h3><p>2nd Runner Up · Voice Assistants</p></div>
+                <a href="cert4.jpg" target="_blank" class="cert-btn">View ↗</a>
+            </div>
+            <div class="cert-card reveal">
+                <div class="cert-front"><div class="cert-icon">🌐</div><h3>Networking Certification</h3><p>IPv4 · IPv6 · Protocols</p></div>
+                <a href="cert3.pdf" target="_blank" class="cert-btn">View ↗</a>
+            </div>
+            <div class="cert-card reveal">
+                <div class="cert-front"><div class="cert-icon">🖥️</div><h3>Front-End Certification</h3><p>HTML · CSS · JavaScript</p></div>
+                <a href="cert7.pdf" target="_blank" class="cert-btn">View ↗</a>
+            </div>
+            <div class="cert-card reveal">
+                <div class="cert-front"><div class="cert-icon">⚛️</div><h3>React JS</h3><p>Learn About React Hooks, Props, State</p></div>
+                <a href="cert8.pdf" target="_blank" class="cert-btn">View ↗</a>
+            </div>
+            <div class="cert-card reveal">
+                <div class="cert-front"><div class="cert-icon">🧠</div><h3>Core Computer Science</h3><p>DSA - Networking - OS</p></div>
+                <a href="cert9.pdf" target="_blank" class="cert-btn">View ↗</a>
+            </div>
         </div>
-
-        <div class="project-card">
-            <img src="cert1.jpg" alt="Hackathon Certificate">
-            <h3>ByteVerse Hackathon 2023 Certification</h3>
-            <p>Java</p>
-            <a href="cert1.jpg" target="_blank" class="btn">
-                View Certificate
-            </a>
-        </div>
-<div class="project-card">
-            <img src="cert11.jpg" alt="Networking Certificate">
-            <h3>JAVA Certification</h3>
-            <p>Programming Knowledge in Java</p>
-            <a href="cert11.pdf" target="_blank" class="btn">
-                View Certificate
-            </a>
-        </div>
-
- <div class="project-card">
-            <img src="cert4.jpg" alt="PresentX 2.1 Competition">
-            <h3>PresentX 2.1 Competition</h3>
-		<p>Second Runner Up</p>
-            <p>Topic:Voice Assistants</p>
-            <a href="cert4.jpg" target="_blank" class="btn">
-                View Certificate
-            </a>
-        </div>
-
-        <div class="project-card">
-            <img src="ph1.jpg" alt="Networking Certificate">
-            <h3>BootCamp Certification</h3>
-            <p>Cyber Security and Network Analysis </p>
-            <a href="ph1.jpg" target="_blank" class="btn">
-                View Certificate
-            </a>
-        </div>
-<div class="project-card">
-            <img src="crt7.jpg" alt="Networking Certificate">
-            <h3>Front-End Certification</h3>
-            <p>Knowledge in HTML,CSS,Javascript</p>
-            <a href="cert7.pdf" target="_blank" class="btn">
-                View Certificate
-            </a>
-        </div>
-
-
     </div>
 </section>
-
-<!-- SOCIAL MEDIA -->
-<section id="social" class="section glass">
-    <h2 class="title type-effect">Connect With Me</h2>
-
-    <div class="social-box">
-
-        <div class="social-item">
-            <img src="https://logopng.com.br/logos/linkedin-83.png" alt="LinkedIn">
-            <h3>LinkedIn</h3>
-            <a href="https://linkedin.com/in/aditya-raj-lnmi7391" target="_blank" class="social-btn">
-                Visit Profile
-            </a>
-        </div>
-
-        <div class="social-item">
-            <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png" alt="GitHub">
-            <h3>GitHub</h3>
-            <a href="https://github.com/Adityaa7391" target="_blank" class="social-btn">
-                Visit Profile
-            </a>
-        </div>
-<div class="social-item">
-    <img src="https://logos-world.net/wp-content/uploads/2020/11/Gmail-Logo.png" alt="Email">
-    <h3>Email</h3>
-    <a href="mailto:adityarajputdbapatna@email.com" class="social-btn">
-        Send Mail
-    </a>
-</div>
-
-
-        <div class="social-item">
-            <img src="https://logos-world.net/wp-content/uploads/2020/04/Instagram-icon-Logo-2016-present.png" alt="Instagram">
-            <h3>Instagram</h3>
-            <a href="https://instagram.com/adityarajput7391" target="_blank" class="social-btn">
-                Visit Profile
-            </a>
-        </div>
-
-        <div class="social-item">
-            <img src="https://logos-world.net/wp-content/uploads/2020/05/Logo-WhatsApp.png" alt="WhatsApp">
-            <h3>WhatsApp</h3>
-            <a href="https://wa.me/919122057235" target="_blank" class="social-btn">
-                Chat Now
-            </a>
-        </div>
-
-    </div>
-</section>
-
 
 <!-- CONTACT -->
-<section id="contact" class="section contact-section">
-    <h2 class="title type-effect">Contact Me</h2>
-    <p class="contact-subtitle">
-        Have a question, project idea, or opportunity?  
-        Feel free to reach out 👇
-    </p>
-
-    <div class="contact-wrapper">
-
-        <!-- LEFT INFO -->
-        <div class="contact-info">
-            <div class="info-box">
-                <span>📧</span>
-                <p>adityarajputdbapatna@email.com</p>
-            </div>
-
-            <div class="info-box">
-                <span>📧</span>
-                <p>adityarajputlnmi@email.com</p>
-            </div>
-
-            <div class="info-box">
-                <span>📞</span>
-                <p>+91 9525891894</p>
-            </div>
-
-            <div class="info-box">
-                <span>📍</span>
-                <p>Patna, India</p>
-            </div>
+<section id="contact" class="section section-alt">
+    <div class="section-inner">
+        <div class="section-label">// get_in_touch</div>
+        <h2 class="section-title">Let's Connect<span class="accent-dot">.</span></h2>
+        <p class="contact-sub">Have a project, idea, or opportunity? I'd love to hear from you.</p>
+        <div class="social-strip">
+            <a href="https://linkedin.com/in/aditya-raj-lnmi7391" target="_blank" class="social-link">
+                <img src="https://logopng.com.br/logos/linkedin-83.png" alt="LinkedIn">LinkedIn
+            </a>
+            <a href="https://github.com/Adityaa7391" target="_blank" class="social-link">
+                <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png" alt="GitHub">GitHub
+            </a>
+            <a href="mailto:adityarajputdbapatna@email.com" class="social-link">
+                <img src="https://logos-world.net/wp-content/uploads/2020/11/Gmail-Logo.png" alt="Email">Email
+            </a>
+            <a href="https://instagram.com/adityarajput7391" target="_blank" class="social-link">
+                <img src="https://logos-world.net/wp-content/uploads/2020/04/Instagram-icon-Logo-2016-present.png" alt="Instagram">Instagram
+            </a>
+            <a href="https://wa.me/919122057235" target="_blank" class="social-link">
+                <img src="https://logos-world.net/wp-content/uploads/2020/05/Logo-WhatsApp.png" alt="WhatsApp">WhatsApp
+            </a>
         </div>
-
-        <!-- RIGHT FORM -->
-       <form
-    class="contact-form"
-    action="https://formspree.io/f/mqeezeql"
-    method="POST"
->
-    <input
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        required
-    >
-
-    <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
-        required
-    >
-
-    <textarea
-        name="message"
-        placeholder="Your Message"
-        required
-    ></textarea>
-
-    <!-- IMPORTANT: reply-to -->
-    <input type="hidden" name="_replyto">
-
-    <button class="btn" type="submit">
-        Send Message
-    </button>
-</form>
-
+        <div class="contact-wrap">
+            <div class="contact-info">
+                <div class="ci-item"><div class="ci-icon">📧</div><div><p class="ci-label">Primary Email</p><p>adityarajputdbapatna@email.com</p></div></div>
+                <div class="ci-item"><div class="ci-icon">📧</div><div><p class="ci-label">College Email</p><p>adityarajputlnmi@email.com</p></div></div>
+                <div class="ci-item"><div class="ci-icon">📞</div><div><p class="ci-label">Phone</p><p>+91 9525891894</p></div></div>
+                <div class="ci-item"><div class="ci-icon">📍</div><div><p class="ci-label">Location</p><p>Patna, Bihar, India</p></div></div>
+            </div>
+            <form class="contact-form" action="https://formspree.io/f/mqeezeql" method="POST">
+                <div class="form-group"><input type="text" name="name" placeholder="Your Name" required></div>
+                <div class="form-group"><input type="email" name="email" placeholder="Your Email" required></div>
+                <div class="form-group"><textarea name="message" placeholder="Your Message" rows="5" required></textarea></div>
+                <input type="hidden" name="_replyto">
+                <button class="btn btn-primary" type="submit">Send Message →</button>
+            </form>
+        </div>
     </div>
 </section>
 
-    <footer>
-    <p>© 2026 Aditya Raj | Built with ❤️ & JavaScript</p>
-    <p id="dateTime"></p>
+<footer>
+    <div class="footer-inner">
+        <p class="footer-logo"><span class="logo-bracket">[</span>AR<span class="logo-bracket">]</span> Aditya Raj</p>
+        <p class="footer-copy">© 2026 — Built with precision & passion</p>
+        <p id="dateTime" class="footer-time"></p>
+    </div>
 </footer>
-
 
 <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
